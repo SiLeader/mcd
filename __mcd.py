@@ -16,7 +16,7 @@ __config = {}
 
 
 def __strip(s: str):
-    return s.strip().strip('/\\')
+    return s.strip().rstrip('/\\')
 
 
 if pathlib.Path(MCD_DIRECTORY_DICT_PATH).exists():
