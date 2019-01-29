@@ -10,7 +10,7 @@ import pathlib
 MCD_CONFIG_DIR = '{}/.config/mcd'.format(pathlib.Path.home())
 MCD_DIRECTORY_DICT_PATH = MCD_CONFIG_DIR + '/directories.dict'
 
-pathlib.Path(MCD_CONFIG_DIR).mkdir(mode=755, parents=True, exist_ok=True)
+pathlib.Path(MCD_CONFIG_DIR).mkdir(mode=0o755, parents=True, exist_ok=True)
 
 __config = {}
 
